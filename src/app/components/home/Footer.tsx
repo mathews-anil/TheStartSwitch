@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       {/* ===== Top Section ===== */}
-      <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-wrap gap-[9px] w-full items-center justify-center '>
+      {/* <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-wrap gap-[9px] w-full items-center justify-center '>
         <Link href="/#" className='hover:border-b border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
           <img src="/images/icon1.png" alt="" />
           <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>The Start Switch</h3>
@@ -36,10 +36,10 @@ const Footer = () => {
           <img src="/images/icon5.png" alt="" />
           <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>Contact</h3>
         </button>
-      </section>
+      </section> */}
 
       {/* ===== Footer Section ===== */}
-      <footer className="bg-[#262A34] text-gray-300 py-12 px-6">
+      <footer className="bg-[#262A34] text-gray-300 py-12 px-6 mt-4 md:mt-[100px]">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-white text-2xl font-semibold mb-10 playfair">
             Make progress inevitable.

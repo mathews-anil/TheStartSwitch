@@ -5,7 +5,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 
 const HeroSedtion = () => {
     return (
-        <section className='hero_section_bg w-full'>
+        <section className='hero_section_bg w-full pt-[40px]'>
             <div className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-col gap-[25px] md:gap-[50px] w-full'>
                 <h2 className='text-center uppercase text-xl leading-5 md:text-2xl font-semibold playfair md:mb-[55px]'>Every failure had one thing in common: <span className='text-[#CD623B]'> it never started.</span></h2>
                 <h1 className='text-center main_heading_spacing playfair font-medium text-[38px] leading-[47px] md:text-[142px] md:leading-[152px]'>You’ve had the idea. <br />
@@ -13,7 +13,7 @@ const HeroSedtion = () => {
                 <div className='flex justify-center items-center gap-2.5 md:gap-3 flex-wrap'>
                     <Link href="https://www.amazon.com/dp/B0FH41DL25" target='_blank' rel="noopener">
                         <button className='hover:bg-[#CD623B] transition w-[185px] cursor-pointer h-[50px] md:w-[221px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
-                        Start the switch
+                        Read the book
                         <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                     </button>
                     </Link>

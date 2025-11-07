@@ -11,6 +11,7 @@ import AboutAuthor from './components/home/AboutAuthor'
 import FlipSwitch from './components/home/FlipSwitch'
 import Footer from './components/home/Footer'
 import Head from 'next/head'
+import Header from './components/home/Header'
 
 
 export const metadata = {
@@ -53,7 +54,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-    <Head>
+      <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -108,7 +109,7 @@ const page = () => {
           }}
         />
       </Head>
-
+      <Header />
       <HeroSedtion />
       <MotivationTalk />
       <InsideBook />
