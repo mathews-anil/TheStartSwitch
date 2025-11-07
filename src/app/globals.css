@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+.hero_section_bg {
+  position: relative; /* important for ::before positioning */
+  background: url("/images/hero_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  z-index: 2; /* default */
+}
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #f9f7f0;
+}
+.para_letter_space {
+  letter-spacing: -1;
+}
+.main_heading_spacing {
+  letter-spacing: -10px;
+}
+.one_letter_space {
+  letter-spacing: 1px;
+}
+.movements_bg {
+  position: relative;
+  background-color: #262A34; /* background color */
+  overflow: hidden; /* safe for child content */
+}
+
+.movements_bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/move_bg.png') no-repeat center/cover;
+  opacity: 0.2; /* 20% opacity */
+  z-index: 0;
+}
+.review_bg{
+  background: url('/images/review.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.movements_bg > * {
+  position: relative;
+  z-index: 1; /* content ko image ke upar rakhta hai */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body::before {
+  content: "";
+  position: fixed; /* pure screen par fix */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.02;
+  z-index: -1;
+}
+@media screen and (max-width: 770px) {
+  .main_heading_spacing {
+    letter-spacing: -1px;
+  }
+  .review_bg{
+    background: url('/images/review_mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero_section_bg {
+    background-size: cover;
+  }
+}
