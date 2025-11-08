@@ -71,7 +71,7 @@ const Footer = () => {
                 <li><Link href="/#graph" className="hover:text-white transition">The Switch Curve™</Link></li>
                 <li><Link href="/#freetoolkit" className="hover:text-white transition">The Toolkit</Link></li>
                 <li><Link href="https://www.amazon.com/dp/B0FH41DL25" rel="noopener" target='_blank' className="hover:text-white transition">Buy the Book</Link></li>
-                <li><Link href="/#about" className="hover:text-white transition">About the Author</Link></li>
+                <li><Link  href="/about-anil-mathews" className="hover:text-white transition">About the Author</Link></li>
               </ul>
             </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li><Link rel="noopener" target='_blank' href="https://www.amazon.com/stores/Anil-Mathews/author/B0FH51DZ18" className="hover:text-white transition">Amazon Author Page</Link></li>
                 <li><Link rel="noopener" target='_blank' href="https://www.goodreads.com/author/show/57597604.Anil_Mathews" className="hover:text-white transition">Goodreads</Link></li>
-                <li><Link href="#" rel="noopener" target='_blank' className="hover:text-white transition">YouTube Trailer </Link></li>
+                {/* <li><Link href="#" rel="noopener" target='_blank' className="hover:text-white transition">YouTube Trailer </Link></li> */}
                 <li><Link href="https://www.anilmathews.com/" rel="noopener" target='_blank' className="hover:text-white transition">AnilMathews.com</Link></li>
                 <li><button onClick={openModal} className="hover:text-white transition cursor-pointer">Contact</button></li>
               </ul>

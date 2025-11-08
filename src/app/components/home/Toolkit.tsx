@@ -8,32 +8,31 @@ const Toolkit = () => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+
+    if (!form.checkValidity()) {
+      form.reportValidity()
+      return
+    }
+
     setError('')
     setSuccess(false)
-
-    if (!email) {
-      setError('Please enter your email.')
-      return
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      setError('Please enter a valid email.')
-      return
-    }
-
     setLoading(true)
+
     try {
-      const res = await fetch('/api/sendEmail', {
+      const res = await fetch('/api/toolkit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
       })
+
       const data = await res.json()
       if (data.success) {
         setSuccess(true)
         setEmail('')
+        setTimeout(() => setSuccess(false), 4000)
       } else {
         setError('Failed to send. Try again.')
       }
@@ -56,7 +55,7 @@ const Toolkit = () => {
               Your free Start <span className='text-[#CD623B]'> Switch Toolkit</span>
             </h2>
             <p
-              className=' hidden lg:block text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold'
+              className='hidden lg:block text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold'
               style={{ letterSpacing: '0.18px' }}
             >
               Don’t just read. Start.
@@ -76,34 +75,39 @@ const Toolkit = () => {
           </p>
         </div>
 
-        {/* Email form - same layout */}
-        <div className='w-full lg:w-[539px] bg-white rounded-[24px] py-[24px] px-[15px] sm:px-[25px] lg:py-[34px] lg:px-[41px] flex flex-col gap-[34px] '>
+        {/* ✅ Email form with native validation */}
+        <form
+          onSubmit={handleSubmit}
+          className='w-full lg:w-[539px] bg-white rounded-[24px] py-[24px] px-[15px] sm:px-[25px] lg:py-[34px] lg:px-[41px] flex flex-col gap-[34px]'
+        >
           <h2 className='text-[28px] lg:text-[35px] 2xl:text-[42px] playfair font-medium text-[#151515] text-center md:text-left'>
             Email in. Toolkit out. That simple.
           </h2>
-          <div className='flex flex-col gap-[12px] '>
+          <div className='flex flex-col gap-[12px]'>
             <p className='text-base lato font-medium'>Email</p>
-            <div className='bg-[#262A340D] border border-[#3032441C] w-full min-h-[88px] px-[22px] py-[16px] lg:p-[22px] rounded-xl flex items-center justify-between '>
-              <div className='flex items-center gap-[12px] '>
-                <img src='/images/email.png' alt=''  />
+            <div className='bg-[#262A340D] border border-[#3032441C] w-full min-h-[88px] px-[22px] py-[16px] lg:p-[22px] rounded-xl flex items-center justify-between'>
+              <div className='flex items-center gap-[12px]'>
+                <img src='/images/email.png' alt='' />
                 <input
                   type='email'
+                  name='email'
                   placeholder='you@example.com'
-                  className='border-none outline-none bg-transparent text-sm placeholder:text-[#151515] placeholder: mt-[-5px]'
+                  className='border-none outline-none bg-transparent text-sm placeholder:text-[#151515]'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
               <button
+                type='submit'
                 className='font-medium lato w-[75px] h-[44px] rounded-[90px] bg-[#CD623B] text-white cursor-pointer disabled:opacity-50'
-                onClick={handleSubmit}
                 disabled={loading}
               >
                 {loading ? '...' : 'Send'}
               </button>
             </div>
 
-            {/* ✅ Error or Success message below box */}
+            {/* ✅ Error or Success message below */}
             {error && <p className='text-red-500 text-sm mt-1'>{error}</p>}
             {success && (
               <div className='flex items-center gap-2 text-green-600 text-sm mt-1'>
@@ -112,11 +116,11 @@ const Toolkit = () => {
               </div>
             )}
           </div>
-        </div>
+        </form>
 
-        {/* Mobile text (same as your layout) */}
+        {/* Mobile text (same as before) */}
         <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[570px] lg:hidden'>
-          <div className='flex flex-col gap-[13px] lg:gap-[10px] '>
+          <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
             <p
               className='text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold'
               style={{ letterSpacing: '0.18px' }}
@@ -139,42 +143,30 @@ const Toolkit = () => {
         </div>
       </div>
 
-      {/* Rest content untouched */}
+      {/* Rest content unchanged */}
       <div className='flex flex-col gap-[13px] lg:gap-[23px] mx-auto'>
-        <h3 className='text-lg md:text-[22px] font-bold lato text-[#0C0407]'>What’s inside:</h3>
+        <h3 className='text-lg md:text-[22px] font-bold lato text-[#0C0407]'>
+          What’s inside:
+        </h3>
         <div className='flex flex-wrap items-center gap-[2px] md:gap-[44px]'>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px] '>
-            <img src='/images/check.png' alt='' />
-            <p>Start checklist</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Action menu</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>The Switch Curve™ guide</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Momentum map</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Launch copy templates</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Founder reflection prompts</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Tools that move you fast</p>
-          </div>
-          <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'>
-            <img src='/images/check.png' alt='' />
-            <p>Exit conditions</p>
-          </div>
+          {[
+            'Start checklist',
+            'Action menu',
+            'The Switch Curve™ guide',
+            'Momentum map',
+            'Launch copy templates',
+            'Founder reflection prompts',
+            'Tools that move you fast',
+            'Exit conditions',
+          ].map((item, i) => (
+            <div
+              key={i}
+              className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'
+            >
+              <img src='/images/check.png' alt='' />
+              <p>{item}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ const HeroSedtion = () => {
                             </p>
                         </div>
                     </div>
-                    <Image src="/images/hero_desk.png" width={694} height={759} alt='hero_mob_img' className='hidden md:block' />
+                    <Image src="/images/hero_desk_new.png" width={694} height={759} alt='hero_mob_img' className='hidden md:block' />
                 </div>
             </div>
         </section>

@@ -9,27 +9,27 @@ const Testimonials = () => {
   const testimonials = [
     {
       author: 'Solopreneur, first-time founder',
-      quote: '“I built more in 7 days than I did in 7 months.“',
+      quote: '“Made me start before I felt ready. And I’m glad I did“',
       width: 'lg:w-[390px]',
     },
     {
-      author: 'Solopreneur, first-time founder',
+      author: 'Early reader',
       quote: '“If Atomic Habits and Rework had a scrappy cousin, this is it.”',
       width: 'lg:w-[784px]',
     },
     {
-      author: 'Solopreneur, first-time founder',
+      author: 'Marketing lead, Series A startup',
       quote: '“It’s not just inspiration - it’s frictionless action.”',
       width: 'lg:w-[506px]',
     },
     {
-      author: 'Solopreneur, first-time founder',
-      quote: '“I built more in 7 days than I did in 7 months.”',
+      author: 'Indie hacker',
+      quote: 'This book slapped my excuses in the face',
       width: 'lg:w-[297px]',
     },
     {
-      author: 'Solopreneur, first-time founder',
-      quote: '“Seven days of focused work outdid seven months of trying.”',
+      author: 'Builder with a full-time job',
+      quote: 'Made me start before I felt ready. And I’m glad I did',
       width: 'lg:w-[363px]',
     },
   ]

@@ -23,9 +23,9 @@ const AboutMathews = () => {
                     {/* <p className='text-[#262A34] text-lg font-medium lato '>His work has been featured in TechCrunch, Forbes, and on stage at CES. </p> */}
                     {/* <p className='text-[#0C0407] text-lg font-bold lato '>Anil writes for anyone who’s waited too long—or walked away too early.</p> */}
                 </div>
-                <Link href="https://www.anilmathews.com/" target='_blank' rel="noopener">
+                <Link  href="/about-anil-mathews" >
                     <button className='hover:bg-[#CD623B] transition w-[292px] h-[50px] cursor-pointer md:w-[350px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
-                        Learn More About Anil Mathew
+                        Learn more about the author
                         <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                     </button>
                 </Link>

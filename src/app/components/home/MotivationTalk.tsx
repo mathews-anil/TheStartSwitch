@@ -4,7 +4,7 @@ import React from 'react'
 const MotivationTalk = () => {
     return (
         <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-col lg:flex-row gap-[25px] md:gap-[60px] w-full'>
-            <img src="/images/motivation.svg" className='w-full lg:w-[541px] order-2 lg:order-1' />
+            <img src="/images/motivation.png" className='w-full lg:w-[541px] order-2 lg:order-1' />
             <div className='flex flex-col gap-[21px] md:gap-[31px] w-full lg:w-[580px] order-1 md:order-2'>
                 <h2 className='text-[38px] leading-[49px] md:text-[100px] md:leading-[106px] playfair font-medium'>This isn’t a <br />
                     <span className='italic font-semibold'>motivational</span><span className='italic font-semibold text-[#CD623B]'> pep talk.</span>
