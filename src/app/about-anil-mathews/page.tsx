@@ -1,11 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import Footer from '../components/home/Footer'
-import Header from '../components/home/Header'
-import AboutMathews from '../components/about/AboutMathews'
-import StartSwitch from '../components/about/StartSwitch'
-import Today from '../components/about/Today'
-import Media from '../components/about/Media'
+import dynamic from 'next/dynamic'
+const Media = dynamic(()=>import('@/app/components/about/Media'))
+const Today = dynamic(()=>import('@/app/components/about/Today'))
+const StartSwitch = dynamic(()=>import('@/app/components/about/StartSwitch'))
+const AboutMathews = dynamic(()=>import('@/app/components/about/AboutMathews'))
+const Header = dynamic(()=>import('@/app/components/home/Header'))
+const Footer = dynamic(()=>import('@/app/components/home/Footer'))
 
 export const metadata = {
   title: 'About Anil Mathews | The Start Switch',

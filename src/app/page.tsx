@@ -1,19 +1,18 @@
 import React from 'react'
-import HeroSedtion from './components/home/HeroSedtion'
-import MotivationTalk from './components/home/MotivationTalk'
-import InsideBook from './components/home/InsideBook'
-import SwitchCurve from './components/home/SwitchCurve'
-import Toolkit from './components/home/Toolkit'
-import Movements from './components/home/Movements'
-import Testimonials from './components/home/Testimonials'
-import Review from './components/home/Review'
-import AboutAuthor from './components/home/AboutAuthor'
-import FlipSwitch from './components/home/FlipSwitch'
-import Footer from './components/home/Footer'
 import Head from 'next/head'
-import Header from './components/home/Header'
-
-
+import dynamic from 'next/dynamic'
+const Header = dynamic(()=>import('@/app/components/home/Header'))
+const Footer = dynamic(()=>import('@/app/components/home/Footer'))
+const FlipSwitch = dynamic(()=>import('@/app/components/home/FlipSwitch'))
+const AboutAuthor = dynamic(()=>import('@/app/components/home/AboutAuthor'))
+const Review = dynamic(()=>import('@/app/components/home/Review'))
+const Testimonials = dynamic(()=>import('@/app/components/home/Testimonials'))
+const Movements = dynamic(()=>import('@/app/components/home/Movements'))
+const Toolkit = dynamic(()=>import('@/app/components/home/Toolkit'))
+const SwitchCurve = dynamic(()=>import('@/app/components/home/SwitchCurve'))
+const InsideBook = dynamic(()=>import('@/app/components/home/InsideBook'))
+const MotivationTalk = dynamic(()=>import('@/app/components/home/MotivationTalk'))
+const HeroSedtion = dynamic(()=>import('@/app/components/home/HeroSedtion'))
 export const metadata = {
   title: 'The Start Switch | Make progress inevitable',
   icons: {
