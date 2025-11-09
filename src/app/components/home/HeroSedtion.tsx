@@ -25,7 +25,8 @@ const HeroSedtion = () => {
                     </Link>
                 </div>
                 <div className='flex flex-col md:flex-row gap-[30px] justify-between items-center relative'>
-                    <Image src="/images/hero_mob_img.png" width={277} height={397} alt='hero_mob_img' className='md:hidden shadow-[ -40.94px_40.94px_81.88px_0px_#00000080]' priority  />
+                    <Image src="/images/hero_mob_img.png" width={277} height={397} alt='hero_mob_img' className='md:hidden' style={{ boxShadow: "-40.94px 40.94px 81.88px 0px #00000080"
+}} />
                     <div className='flex flex-col border-y border-[#FFFFFF9E] w-full md:w-[496px] '>
                         <div className='py-[25px] px-7 md:p-9 rounded-xl flex flex-col gap-[27px]!'>
                             <h3 className='text-lg font-bold text-[#CD623B] '>01</h3>
@@ -44,7 +45,7 @@ const HeroSedtion = () => {
                             </p>
                         </div>
                     </div>
-                    <Image src="/images/hero_desk_new.png" priority  width={694} height={759} alt='hero_mob_img' className='hidden md:block' />
+                    <Image src="/images/hero_desk_new.png" width={694} height={759} alt='hero_mob_img' className='hidden md:block' />
                 </div>
             </div>
         </section>
