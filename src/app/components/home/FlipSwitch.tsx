@@ -33,15 +33,15 @@ const FlipSwitch = () => {
                     <p className='text-[28px] leading-[27px] lato text-[#0C0407] font-bold hidden md:block' style={{ letterSpacing: "0.18px" }}>
                         This is your Day 1.
                     </p>
-                    <div className='flex justify-start items-center gap-2.5 md:gap-3 flex-wrap'>
+                    <div className='flex justify-start items-center gap-2.5 md:gap-3 '>
                         <Link href="https://www.amazon.com/dp/B0FH41DL25" target='_blank' rel="noopener">
-                            <button className='hover:bg-[#CD623B] transition cursor-pointer w-[163px] h-[50px] md:w-[196px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
+                            <button className='hover:bg-[#CD623B] transition cursor-pointer w-[145px] sm:w-[163px] h-[50px] md:w-[196px] md:h-[60px] p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
                                 Get the book
                                 <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                             </button>
                         </Link>
                         <Link href="/#freetoolkit">
-                            <button className='hover:bg-[#CD623B] transition hover:text-white cursor-pointer w-[156px] h-[50px] md:w-[187px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center'>
+                            <button className='hover:bg-[#CD623B] transition hover:text-white cursor-pointer w-[140px] sm:w-[156px] h-[50px] md:w-[187px] md:h-[60px] p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center'>
                                 Free toolkit
                                 <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                             </button></Link>

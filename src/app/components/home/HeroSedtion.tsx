@@ -10,15 +10,15 @@ const HeroSedtion = () => {
                 <h2 className='text-center uppercase text-xl leading-5 md:text-2xl font-semibold playfair md:mb-[55px]'>Every failure had one thing in common: <span className='text-[#CD623B]'> it never started.</span></h2>
                 <h1 className='text-center main_heading_spacing playfair font-medium text-[38px] leading-[47px] md:text-[142px] md:leading-[152px]'>You’ve had the idea. <br />
                     <span className='text-[#CD623B] ubuntu'>But it never launched</span></h1>
-                <div className='flex justify-center items-center gap-2.5 md:gap-3 flex-wrap'>
+                <div className='flex justify-center items-center gap-2.5 md:gap-3 '>
                     <Link href="https://www.amazon.com/dp/B0FH41DL25" target='_blank' rel="noopener">
-                        <button className='hover:bg-[#CD623B] transition w-[185px] cursor-pointer h-[50px] md:w-[221px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair  font-bold text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
+                        <button className='hover:bg-[#CD623B] transition w-[150px] sm:w-[185px] cursor-pointer h-[50px] md:w-[221px] md:h-[60px] p-1.5 sm:p-2.5 pl-[15px] sm:pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair  font-bold text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
                         Read the book
                         <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                     </button>
                     </Link>
                     <Link href="/#freetoolkit" >
-                        <button className='hover:bg-[#CD623B] transition hover:text-white cursor-pointer w-[205px] h-[50px] md:w-[246px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] playfair font-bold text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center'>
+                        <button className='hover:bg-[#CD623B] transition hover:text-white cursor-pointer w-[180px] sm:w-[205px] h-[50px] md:w-[246px] md:h-[60px] p-1.5 sm:p-2.5 pl-[15px] sm:pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] playfair font-bold text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center'>
                         Get the free toolkit
                         <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'><GoArrowUpRight /></span>
                     </button>

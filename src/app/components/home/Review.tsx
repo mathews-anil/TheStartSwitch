@@ -78,11 +78,11 @@ const Review = () => {
             />
           </div>
 
-          <div className='flex justify-center items-center gap-2.5 md:gap-3 flex-wrap relative'>
+          <div className='flex justify-center items-center gap-2.5 md:gap-3 relative'>
             {/* Send Proof button */}
             <button
               type='submit'
-              className='w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
+              className='w-[135px] sm:w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
             >
               Send Proof
               <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'>
@@ -91,10 +91,10 @@ const Review = () => {
             </button>
 
             {/* Select file button */}
-            <div className='relative w-[154px] h-[50px] md:w-[185px] md:h-[60px]'>
+            <div className='relative w-[135px] sm:w-[154px] h-[50px] md:w-[185px] md:h-[60px]'>
               <button
                 type='button'
-                className='absolute inset-0 w-full h-full rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] md:border-none playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center p-2.5 pl-[22px] md:p-3 md:pl-[26px]'
+                className='absolute inset-0 w-full h-full rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] md:border-none playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px]'
                 onClick={() => fileInputRef.current?.click()}
               >
                 {fileName ? fileName.slice(0, 10) + '...' : 'Select a file'}
