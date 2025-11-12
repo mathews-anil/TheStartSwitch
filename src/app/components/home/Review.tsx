@@ -57,7 +57,7 @@ const Review = () => {
           If The Start Switch helped you, leave a short honest review and send me proof.
         </p>
         <p className='text-center text-lg font-bold lato text-[#FFFFFF]'>
-          I'll personally send you a free early copy of my next book - The Hustle Delusion - before it launches.
+          I'll personally send you a free early copy of my next book-The Hustle Delusion-before it launches.
         </p>
 
         <form

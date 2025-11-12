@@ -9,8 +9,7 @@ const MotivationTalk = () => {
                 <h2 className='text-[38px] leading-[49px] md:text-[100px] md:leading-[106px] playfair font-medium'>This isn’t a <br />
                     <span className='italic font-semibold'>motivational</span><span className='italic font-semibold text-[#CD623B]'> pep talk.</span>
                 </h2>
-                <p className='text-lg leading-[27px] lato text-[#262A34] font-medium' style={{ letterSpacing: "0.18px" }}>It’s a no-fluff guide to help you finally start the thing you’ve been sitting on —
-                    without needing more time, more clarity, or more confidence.</p>
+                <p className='text-lg leading-[27px] lato text-[#262A34] font-medium' style={{ letterSpacing: "0.18px" }}>It’s a no-fluff guide to help you finally start the thing you’ve been sitting on—without needing more time, more clarity, or more confidence.</p>
                 <p className='text-lg leading-[27px] lato text-[#262A34] font-bold' style={{ letterSpacing: "0.18px" }}>If you’ve been stuck in planning mode, perfectionism, or second-guessing... <br />
                     The Start Switch was written for you.
                 </p>

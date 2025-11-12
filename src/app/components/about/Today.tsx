@@ -28,7 +28,7 @@ const Today = () => {
                         </button>
                     </Link>
                 </div>
-                <Image src="/images/today.png"  alt="" width={600} height={350} className='rounded-[15px] w-full lg:w-[600px]' />
+                <Image src="/images/new-today.png"  alt="" width={600} height={350} className='rounded-[15px] w-full lg:w-[600px]' />
             </div>
         </section>
     )

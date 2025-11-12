@@ -92,7 +92,7 @@ const Footer = () => {
             <p className="mt-1">
               The Start Switch is a work by{' '}
               <Link href="https://anilmathews.com" rel="noopener" target='_blank' className="underline hover:text-white">
-                AnilMathews.com
+                Anil Mathews
               </Link>, author and entrepreneur.
             </p>
           </div>

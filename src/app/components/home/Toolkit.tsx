@@ -66,7 +66,7 @@ const Toolkit = () => {
             className='text-lg hidden lg:block leading-[27px] lato text-[#262A34] font-medium'
             style={{ letterSpacing: '0.18px' }}
           >
-            The Start Switch Toolkit is your free companion to take action fast —before the overthinking creeps back in.
+            The Start Switch Toolkit is your free companion to take action fast—before the overthinking creeps back in.
           </p>
           <p
             className='text-lg hidden lg:block leading-[27px] lato text-[#262A34] font-semibold'
@@ -133,7 +133,7 @@ const Toolkit = () => {
             className='text-lg lg:hidden leading-[27px] lato text-[#262A34] font-medium'
             style={{ letterSpacing: '0.18px' }}
           >
-            The Start Switch Toolkit is your free companion to take action fast —before the overthinking creeps back in.
+            The Start Switch Toolkit is your free companion to take action fast—before the overthinking creeps back in.
           </p>
           <p
             className='text-lg lg:hidden leading-[27px] lato text-[#262A34] font-medium'

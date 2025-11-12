@@ -30,13 +30,12 @@ const HeroSedtion = () => {
                     <div className='flex flex-col border-y border-[#FFFFFF9E] w-full md:w-[496px] '>
                         <div className='py-[25px] px-7 md:p-9 rounded-xl flex flex-col gap-[27px]!'>
                             <h3 className='text-lg font-bold text-[#CD623B] '>01</h3>
-                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'>Not because it wasn’t good— <br />
-                                but because you waited too long or walked away too early.
+                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'>Not because it wasn’t good—but because you waited too long or walked away too early.
                             </p>
                         </div>
                         <div className='py-[25px] px-7 md:p-9 rounded-xl flex flex-col gap-[27px] bg-[#FFFFFF52]'>
                             <h3 className='text-lg font-bold text-[#CD623B] '>02</h3>
-                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'><span className='text-[#CD623B]'>The Start Switch</span> is the guide to finally <br /> doing the thing you’ve been thinking about
+                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'><span className='text-[#CD623B]'>The Start Switch</span> is the guide to finally doing the thing you’ve been thinking about
                             </p>
                         </div>
                         <div className='py-[25px] px-7 md:p-9 rounded-xl flex flex-col gap-[27px]'>

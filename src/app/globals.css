@@ -71,6 +71,12 @@ body::before {
   opacity: 0.02;
   z-index: -1;
 }
+@media screen and (orientation: landscape) {
+  .hero_section_bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
 @media screen and (max-width: 770px) {
   .main_heading_spacing {
     letter-spacing: -1px;
