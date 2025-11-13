@@ -19,7 +19,7 @@ const SwitchCurve = () => {
                     </h3>
                 </div>
             </div>
-            <Image width={1249} height={718} src="/images/graph.png" alt="switch curve image" className='' />
+            <Image width={1249} height={718} src="/images/new-graph.png" alt="switch curve image" className='' />
             <div className='flex flex-wrap justify-center items-center gap-[12px] md:gap-[14px] flex-col sm:flex-row'>
                 <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col justify-center gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
