@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: 'Website Contact <noreply@thestartswitch.com>',
-      to: 'CLIENT_EMAIL_HERE', // 👈 Replace this with client’s actual email
+      to: 'author@mathews.com', 
       subject: 'New Contact Form Submission',
       html: `
         <h3>New message from The Start Switch</h3>

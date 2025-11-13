@@ -20,17 +20,17 @@ const Testimonials = () => {
     },
     {
       author: 'Marketing lead, Series A startup',
-      quote: '“It’s not just inspiration - it’s frictionless action.”',
+      quote: '“It’s not just inspiration—it’s frictionless action.”',
       width: 'lg:w-[506px]',
     },
     {
       author: 'Indie hacker',
-      quote: 'This book slapped my excuses in the face',
+      quote: '“This book slapped my excuses in the face”',
       width: 'lg:w-[297px]',
     },
     {
       author: 'Builder with a full-time job',
-      quote: 'Made me start before I felt ready. And I’m glad I did',
+      quote: '“I built more in 7 days than I did in 7 months.”',
       width: 'lg:w-[363px]',
     },
   ]
@@ -76,7 +76,7 @@ const Testimonials = () => {
             key={index}
             className={`w-full ${t.width} py-[29px] px-[27px] bg-[#FFFFFF] border border-[#F0F0F0] rounded-[24px] flex flex-col gap-[30px]`}
           >
-            <p className='lato font-bold text-base'>{t.author}</p>
+            <p className='lato font-bold text-base text-[#CD623B]'>{t.author}</p>
             <p className='italic font-semibold playfair text-[22px] text-[#151515]'>{t.quote}</p>
           </div>
         ))}
@@ -88,7 +88,7 @@ const Testimonials = () => {
           {testimonials.map((t, index) => (
             <div key={index}>
               <div className='min-w-full py-[29px] px-[27px] bg-[#FFFFFF] border border-[#F0F0F0] rounded-[24px] flex flex-col gap-[22px] text-left mx-auto min-h-[200px]'>
-                <p className='lato font-bold text-base text-[#453030]'>{t.author}</p>
+                <p className='lato font-bold text-base text-[#CD623B]'>{t.author}</p>
                 <p className='italic font-semibold playfair text-[20px] text-[#151515]'>{t.quote}</p>
               </div>
             </div>

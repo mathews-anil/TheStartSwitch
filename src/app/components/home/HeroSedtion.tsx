@@ -40,7 +40,7 @@ const HeroSedtion = () => {
                         </div>
                         <div className='py-[25px] px-7 md:p-9 rounded-xl flex flex-col gap-[27px]'>
                             <h3 className='text-lg font-bold text-[#CD623B] '>03</h3>
-                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'>It’s not about being ready. It’s <br /> about flipping the switch.
+                            <p className='text-lg md:text-xl leading-7 font-semibold text-[#0C0407] one_letter_space'>It’s not about being ready. It’s about flipping the switch.
                             </p>
                         </div>
                     </div>

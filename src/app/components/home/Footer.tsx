@@ -60,7 +60,7 @@ const Footer = () => {
       <footer className="bg-[#262A34] text-gray-300 py-12 px-6 md:mt-[100px]">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-white text-2xl font-semibold mb-10 playfair">
-            Make progress inevitable.
+            Build a life where progress keeps happening.
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10 lato">
