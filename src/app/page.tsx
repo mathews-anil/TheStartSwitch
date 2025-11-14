@@ -14,7 +14,7 @@ const InsideBook = dynamic(()=>import('@/app/components/home/InsideBook'))
 const MotivationTalk = dynamic(()=>import('@/app/components/home/MotivationTalk'))
 const HeroSedtion = dynamic(()=>import('@/app/components/home/HeroSedtion'))
 export const metadata = {
-  title: 'The Start Switch | Make progress inevitable',
+  title: 'The Start Switch | The Book That Gets You To Finally Start',
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96' }
@@ -24,21 +24,21 @@ export const metadata = {
 
   manifest: '/site.webmanifest',
   description:
-    'A practical book and toolkit to help you stop overthinking, start small, and build momentum that lasts.',
+    'A practical guide to breaking overthinking, building momentum, and finally starting the thing you’ve been avoiding.',
   alternates: {
     canonical: 'https://thestartswitch.com',
   },
   openGraph: {
-    title: 'The Start Switch | Make progress inevitable',
+    title: 'The Start Switch | The Book That Gets You To Finally Start',
     description:
-      'A practical book and toolkit to help you stop overthinking, start small, and build momentum that lasts.',
+      'A practical guide to breaking overthinking, building momentum, and finally starting the thing you’ve been avoiding.',
     url: 'https://thestartswitch.com',
     siteName: 'The Start Switch',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/images/hero_desk.png',
+        url: '/images/tss-home.jpg',
         width: 1200,
         height: 630,
         alt: 'The Start Switch — book cover and brand artwork',
@@ -49,8 +49,8 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'The Start Switch | Make progress inevitable',
     description:
-      'A practical book and toolkit to help you stop overthinking, start small, and build momentum that lasts.',
-    images: ['/images/hero_desk.png'],
+      'A practical guide to breaking overthinking, building momentum, and finally starting the thing you’ve been avoiding.',
+    images: ['/images/tss-home.jpg'],
   },
   robots: {
     index: true,
@@ -106,7 +106,7 @@ const page = () => {
                     'A practical book and toolkit to help you stop overthinking, start small, and build momentum that lasts.',
                   primaryImageOfPage: {
                     '@type': 'ImageObject',
-                    url: '/images/hero_desk.png',
+                    url: '/images/tss-home.jpg',
                     width: 1200,
                     height: 630,
                   },

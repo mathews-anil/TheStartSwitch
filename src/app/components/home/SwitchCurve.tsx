@@ -9,7 +9,7 @@ const SwitchCurve = () => {
                 <div className='w-full lg:w-[600px] min-h-[165px] md:h-[225px] py-[25px] px-[28px] lg:p-[36px] '>
                     <h3 className='text-lg font-bold text-[#CD623B] mb-[27px]'>01</h3>
                     <h3 className='text-xl lg:text-[22px] font-bold text-[#0C0407] lato mb-[5px] lg:mb-3' style={{ letterSpacing: "1px" }}>Most people don’t fail at the start</h3>
-                    <h3 className='text-lg lg:text-[20px] font-normal text-[#0C0407] lato' style={{ letterSpacing: "1px" }}>Most people don’t fail at the start</h3>
+                    <h3 className='text-lg lg:text-[20px] font-normal text-[#0C0407] lato' style={{ letterSpacing: "1px" }}>They fail in the silence right after.</h3>
                 </div>
                 <div className='w-full lg:w-[600px] min-h-[165px] md:h-[225px] py-[25px] px-[28px] lg:p-[36px] bg-[#FFFFFFBD] rounded-xl'>
                     <h3 className='text-lg font-bold text-[#CD623B] mb-[27px]'>02</h3>

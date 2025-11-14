@@ -28,7 +28,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/hero_desk.png',
+        url: '/images/tss-about.jpg',
         width: 1200,
         height: 630,
         alt: 'Portrait of Anil Mathews and The Start Switch branding',
@@ -40,7 +40,7 @@ export const metadata = {
     title: 'About Anil Mathews | The Start Switch',
     description:
       'Entrepreneur and author Anil Mathews, founder of Alphabyte Ventures and author of The Start Switch. Principles behind progress, momentum, and measurable change.',
-    images: ['/images/hero_desk.png'],
+    images: ['/images/tss-about.jpg'],
   },
   robots: {
     index: true,
@@ -97,7 +97,7 @@ const Page = () => {
                   dateModified: '2025-11-04',
                   primaryImageOfPage: {
                     '@type': 'ImageObject',
-                    url: '/images/hero_desk.png',
+                    url: '/images/tss-about.jpg',
                     width: 1200,
                     height: 630,
                   },
