@@ -82,7 +82,7 @@ const Review = () => {
             {/* Send Proof button */}
             <button
               type='submit'
-              className='w-[135px] sm:w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
+              className='cursor-pointer w-[135px] sm:w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-1.5 sm:p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-sm sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
             >
               Send Proof
               <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'>

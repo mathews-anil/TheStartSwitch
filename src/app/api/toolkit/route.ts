@@ -1,8 +1,8 @@
 import { Resend } from 'resend';
 
-const resend = new Resend('re_eaqLYEEK_NQUrn3ASJXMwhgN8Vkvtu9Zy'); 
+const resend = new Resend('re_X1CbigeJ_Bdtcs7kdhhzepXrsv1Fn4NPy'); // client verified key
 
-export async function POST(req) {
+export async function POST(req: Request) {
   try {
     const { email } = await req.json();
 
@@ -14,8 +14,8 @@ export async function POST(req) {
     }
 
     const data = await resend.emails.send({
-      from: 'author@mathews.com', // client ka sender email
-      to: 'author@mathews.com',   // jahan sab forms ka data jana ha
+      from: 'The Start Switch <noreply@email.thestartswitch.com>', // verified sender
+      to: 'author@mathews.com',   // client recipient
       subject: 'New Toolkit Form Submission',
       html: `<p><strong>Email:</strong> ${email}</p>`,
     });

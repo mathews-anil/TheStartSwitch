@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend('re_eaqLYEEK_NQUrn3ASJXMwhgN8Vkvtu9Zy') // client key
+const resend = new Resend('re_X1CbigeJ_Bdtcs7kdhhzepXrsv1Fn4NPy') // client verified key
 
 export async function POST(req: Request) {
   try {
@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: 'Website Contact <noreply@thestartswitch.com>',
+      from: 'The Start Switch <noreply@email.thestartswitch.com>',
       to: 'author@mathews.com', 
       subject: 'New Contact Form Submission',
       html: `
