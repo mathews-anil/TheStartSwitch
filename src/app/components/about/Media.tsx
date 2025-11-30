@@ -8,8 +8,8 @@ const Media = () => {
             <div className='w-full flex flex-col lg:flex-row gap-3 md:gap-[50px] items-center justify-center text-center'>
                 <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[700px] items-center justify-center'>
                     <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
-                        <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>In The
-                            <span className='text-[#CD623B]'> Media</span>
+                        <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>In the
+                            <span className='text-[#CD623B]'> media</span>
                         </h2>
                     </div>
                     <p className='text-lg leading-[27px] lato text-[#262A34] font-medium' style={{ letterSpacing: "0.18px" }}>Anil’s story has been featured in <b>Bloomberg, TechCrunch</b>, and other leading
